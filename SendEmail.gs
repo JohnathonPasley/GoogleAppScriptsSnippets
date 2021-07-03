@@ -14,7 +14,7 @@ function sendEmails() {
     var emailAddress = row[16]; // Change this to the column where you can find the email address
     var message = row[20]; // Change this to the column where you can find the content of the message you want to send.
     var subject = row[17]; // Change this to the subject line
-    var cc = row[18];
+    var cc = row[18]; // Change this to column with the cc email address
     MailApp.sendEmail(emailAddress, subject, message,{
     name: 'Insert Name Here',
     replyTo: 'Insert Reply To Address'
